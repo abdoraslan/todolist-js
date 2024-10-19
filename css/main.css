@@ -1,0 +1,163 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.parent {
+    height: 100vh;
+    background-color: rgb(43, 5, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content {
+    width: 70%;
+
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .content {
+        width: 90%;
+    
+    }
+    
+}
+
+
+.head {
+    background-color: rgb(81, 36, 122);
+    padding: .2em;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    position: relative;
+}
+
+.head button {
+    position: absolute;
+    top: 50%;
+    right: .5em;
+    height: 2.5em;
+    width: 2.5em;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.tasks {
+    background-color: #eee;
+    padding: 1em;
+}
+
+.task {
+    background-color: white;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-transition: box-shadow .3s;
+    -moz-transition: box-shadow .3s;
+    -ms-transition: box-shadow .3s;
+    -o-transition: box-shadow .3s;
+    transition: box-shadow .3s;
+}
+
+.done {
+    background-color: rgb(194, 149, 235);
+}
+
+.task:hover {
+    box-shadow: 0 3px 15px rgb(97, 97, 97, 0.843);
+}
+
+.task button {
+    height: 2.5em;
+    width: 2.5em;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 3em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.task button:first-of-type {
+    background-color: blueviolet;
+    margin-left: 2em;
+}
+
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .content {
+        width: 100%;
+    
+    }
+    .task {
+        padding-left: 0;
+        padding-right: .5em;
+    }
+    .task button {
+        margin-right: .2em;
+    }
+    .task button:first-of-type {
+        margin-left: .5em;
+    }  
+}
+
+
+
+.second-button {
+    background-color: green;
+}
+
+.done-button {
+    background-color: chocolate;
+}
+
+.task button:nth-child(3) {
+    background-color: red;
+}
+
+hr {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0
+}
+
+.title {
+    text-align: end;
+}
+
+
+.head i {
+    font-size: 1.5em;
+}
+
+.task i {
+    font-size: 1.2em
+}
+
+.icon-color {
+    background-color: red;
+}
